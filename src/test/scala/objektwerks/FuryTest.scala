@@ -1,10 +1,8 @@
-package z
+package objektwerks
 
 import org.scalatest.funsuite.AnyFunSuite
+import org.scalatest.matchers.should.Matchers
 
-import scalaz.Scalaz.*
-
-final class ShowTest extends AnyFunSuite:
-  test("show"):
-    1.shows assert_=== "1"
-    "32" + 1.show assert_=== "321"
+final class FuryTest extends AnyFunSuite with Matchers:
+  test("fury"):
+    println("todo")
