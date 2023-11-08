@@ -8,7 +8,10 @@ import org.scalatest.matchers.should.Matchers
 enum Gender:
   case Female, Male
 
-final case class Person(id: Int, name: String, age: Int, gender: Gender = Gender.Male)
+final case class Person(id: Int,
+                        name: String,
+                        age: Int,
+                        gender: Gender = Gender.Male)
 
 final class FuryTest extends AnyFunSuite with Matchers:
   val fury = Fury
