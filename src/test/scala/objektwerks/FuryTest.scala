@@ -15,7 +15,7 @@ final class FuryTest extends AnyFunSuite with Matchers:
     .withRefTracking(true)
     .build
 
-  test("fury"):
+  test("case class"):
     val person = Person(id = 1, name = "Fred Flintstone", 24)
     val serializedPerson = fury.serialize(person)
     val deserializedPerson = fury.deserialize(serializedPerson)
