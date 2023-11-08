@@ -12,7 +12,7 @@ final case class Person(id: Int,
                         name: String,
                         age: Int,
                         gender: Gender = Gender.Male,
-                        tribe: Option[String])
+                        trade: Option[String])
 
 final class FuryTest extends AnyFunSuite with Matchers:
   val fury = Fury
@@ -23,15 +23,15 @@ final class FuryTest extends AnyFunSuite with Matchers:
     .build
 
   test("case class"):
-    val person = Person(id = 1, name = "Fred Flintstone", age = 24, tribe = Some("stone"))
+    val person = Person(id = 1, name = "Fred Flintstone", age = 24, trade = Some("stone mover"))
     val serializedPerson = fury.serialize(person)
     val deserializedPerson = fury.deserialize(serializedPerson)
     person shouldBe deserializedPerson
 
   test("list of case classes"):
     val persons = List(
-      Person(id = 1, name = "Fred Flintstone", age = 24, tribe = Some("stone")),
-      Person(id = 2, name = "Barney Rubble", age = 21, tribe = Some("stone"))
+      Person(id = 1, name = "Fred Flintstone", age = 24, trade = Some("stone mover")),
+      Person(id = 2, name = "Barney Rubble", age = 21, trade = Some("stone cutter"))
     )
     val serializedPersons = fury.serialize(persons)
     val deserializedPersons = fury.deserialize(serializedPersons)
