@@ -5,6 +5,8 @@ import io.fury.Fury
 import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.should.Matchers
 
+final case class Person(id: Int, name: String, age: Int)
+
 final class FuryTest extends AnyFunSuite with Matchers:
   val fury = Fury
     .builder
@@ -14,4 +16,7 @@ final class FuryTest extends AnyFunSuite with Matchers:
     .build
 
   test("fury"):
-    println("todo")
+    val person = Person(id = 1, name = "Fred Flintstone", 24)
+    val serializedPerson = fury.serialize(person)
+    val deserializedPerson = fury.deserialize(serializedPerson)
+    person shouldBe deserializedPerson
