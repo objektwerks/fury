@@ -11,7 +11,8 @@ enum Gender:
 final case class Person(id: Int,
                         name: String,
                         age: Int,
-                        gender: Gender = Gender.Male)
+                        gender: Gender = Gender.Male,
+                        tribe: Option[String])
 
 final class FuryTest extends AnyFunSuite with Matchers:
   val fury = Fury
@@ -22,15 +23,15 @@ final class FuryTest extends AnyFunSuite with Matchers:
     .build
 
   test("case class"):
-    val person = Person(id = 1, name = "Fred Flintstone", 24)
+    val person = Person(id = 1, name = "Fred Flintstone", age = 24, tribe = Some("stone"))
     val serializedPerson = fury.serialize(person)
     val deserializedPerson = fury.deserialize(serializedPerson)
     person shouldBe deserializedPerson
 
   test("list of case classes"):
     val persons = List(
-      Person(id = 1, name = "Fred Flintstone", 24),
-      Person(id = 2, name = "Barney Rubble", 21)
+      Person(id = 1, name = "Fred Flintstone", age = 24, tribe = Some("stone")),
+      Person(id = 2, name = "Barney Rubble", age = 21, tribe = Some("stone"))
     )
     val serializedPersons = fury.serialize(persons)
     val deserializedPersons = fury.deserialize(serializedPersons)
