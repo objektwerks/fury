@@ -8,7 +8,7 @@ import org.openjdk.jmh.annotations.*
 @BenchmarkMode(Array(Mode.AverageTime))
 @OutputTimeUnit(TimeUnit.MICROSECONDS)
 @Warmup(iterations = 10)
-@Measurement(iterations = 100)
+@Measurement(iterations = 10)
 @Fork(1)
 class Performance:
   @Benchmark
