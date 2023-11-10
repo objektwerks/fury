@@ -5,15 +5,6 @@ import io.fury.Fury
 import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.should.Matchers
 
-enum Gender:
-  case Female, Male
-
-final case class Person(id: Int,
-                        name: String,
-                        age: Int,
-                        gender: Gender = Gender.Male,
-                        trade: Option[String])
-
 final class FuryTest extends AnyFunSuite with Matchers:
   val fury = Fury
     .builder
