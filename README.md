@@ -18,12 +18,10 @@ Benchmark
 Results
 -------
 >OpenJDK Runtime Environment Zulu21.28+85-CA (build 21+35), **Scala 3.3.1**, Apple M1, 2020, 16GB
-```
-Benchmark                      Mode  Cnt  Score    Error  Units
-Performance.furyBenchmark      avgt   10  0.470 ±  0.008  us/op
-Performance.jsoniterBenchmark  avgt   10  0.243 ±  0.001  us/op
-Total time: 402 s (06:42), completed Nov 10, 2023, 5:16:14 PM
-```
+1. jsoniterBenchmark 0.243
+2. furyBenchmark     0.470
+>Total time: 402 s (06:42), 10 warmups, 10 iterations, in microseconds, completed **2023.11.10**
+
 
 Resources
 ---------
