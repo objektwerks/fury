@@ -17,3 +17,5 @@ object Store:
   def deserialize(bytes: Array[Byte]): Person = fury.deserialize(bytes).asInstanceOf[Person]
 
   def toJson(person: Person): String = writeToString[Person](person)
+
+  def fromJson(json: String): Person = readFromString[Person](json)
