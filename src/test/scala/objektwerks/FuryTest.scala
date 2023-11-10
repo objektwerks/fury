@@ -6,12 +6,12 @@ import org.scalatest.matchers.should.Matchers
 final class FuryTest extends AnyFunSuite with Matchers:
   test("case class"):
     val person = Person.newPerson
-    val serializedPerson = Person.serialize(person)
-    val deserializedPerson = Person.deserialize(serializedPerson)
+    val serializedPerson = Store.serialize(person)
+    val deserializedPerson = Store.deserialize(serializedPerson)
     person shouldBe deserializedPerson
 
   test("list of case classes"):
     val persons = Person.newPersons
-    val serializedPersons = Person.serialize(persons)
-    val deserializedPersons = Person.deserialize(serializedPersons)
+    val serializedPersons = Store.serialize(persons)
+    val deserializedPersons = Store.deserialize(serializedPersons)
     persons shouldBe deserializedPersons

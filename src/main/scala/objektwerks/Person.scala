@@ -15,7 +15,6 @@ final case class Person(id: Int,
 
 object Person:
   given JsonValueCodec[Person] = JsonCodecMaker.make[Person]
-  given JsonValueCodec[List[Person]] = JsonCodecMaker.make[List[Person]]
 
   def newPerson: Person = Person(
     id = Random.between(1, 1_000_000),
