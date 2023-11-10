@@ -17,9 +17,11 @@ object Person:
   given JsonValueCodec[Person] = JsonCodecMaker.make[Person]
   given JsonValueCodec[List[Person]] = JsonCodecMaker.make[List[Person]]
 
-  val person = Person(
+  def newPerson: Person = Person(
     id = Random.between(1, 1_000_000),
     name = "Fred Flintstone",
     age = Random.between(1, 1_000_000),
     trade = Some("stone mover")
   )
+
+  val persons = List( newPerson, newPerson )
