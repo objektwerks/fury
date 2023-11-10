@@ -24,4 +24,4 @@ object Person:
     trade = Some("stone mover")
   )
 
-  val persons = List( newPerson, newPerson )
+  def newPersons: List[Person] = List( newPerson, newPerson )
