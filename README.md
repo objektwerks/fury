@@ -22,7 +22,7 @@ Results
 2. furyBenchmark     0.470
 >Total time: 402 s (06:42), 10 warmups, 10 iterations, in microseconds, completed **2023.11.10**
 
-> [Current Scala3-Json Tests](https://github.com/objektwerks/scala3.json)
+>[Current Scala3-Json Tests](https://github.com/objektwerks/scala3.json)
 
 
 Resources
