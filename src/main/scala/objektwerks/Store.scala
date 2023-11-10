@@ -11,3 +11,5 @@ object Store:
     .build
 
   def serialize(person: Person): Array[Byte] = fury.serialize(person)
+
+  def deserialize(bytes: Array[Byte]): Person = fury.deserialize(bytes).asInstanceOf[Person]
