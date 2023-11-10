@@ -17,6 +17,7 @@ Benchmark
 
 Results
 -------
+>OpenJDK Runtime Environment Zulu21.28+85-CA (build 21+35), **Scala 3.3.1**, Apple M1, 2020, 16GB
 ```
 Benchmark                      Mode  Cnt  Score    Error  Units
 Performance.furyBenchmark      avgt   10  0.470 ±  0.008  us/op
