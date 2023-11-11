@@ -11,7 +11,8 @@ final class FuryTest extends AnyFunSuite with Matchers:
     person shouldBe deserializedPerson
 
   test("persons"):
+    import Store.fury
     val persons = List( Person.newPerson, Person.newPerson )
-    val serializedPersons = Store.fury.serialize(persons)
-    val deserializedPersons = Store.fury.deserialize(serializedPersons)
+    val serializedPersons = fury.serialize(persons)
+    val deserializedPersons = fury.deserialize(serializedPersons)
     persons shouldBe deserializedPersons
