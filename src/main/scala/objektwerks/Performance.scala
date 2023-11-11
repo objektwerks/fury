@@ -20,7 +20,9 @@ class Performance:
     (serializedPerson, deserializedPerson)
 
   @Benchmark
-  def jsoniter(): Unit =
+  def jsoniter(): (String, Person) =
     val person = Person.newPerson
-    val personJson = Store.toJson(person)
-    assert( person == Store.fromJson(personJson) )
+    val serializedPerson = Store.toJson(person)
+    val deserializedPerson = Store.fromJson(serializedPerson)
+    assert( person == deserializedPerson )
+    (serializedPerson, deserializedPerson)
