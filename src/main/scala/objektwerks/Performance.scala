@@ -12,11 +12,12 @@ import org.openjdk.jmh.annotations.*
 @Fork(1)
 class Performance:
   @Benchmark
-  def fury(): Unit =
+  def fury(): (Array[Byte], Person) =
     val person = Person.newPerson
     val serializedPerson = Store.serialize(person)
     val deserializedPerson = Store.deserialize(serializedPerson)
     assert( person == deserializedPerson )
+    (serializedPerson, deserializedPerson)
 
   @Benchmark
   def jsoniter(): Unit =
