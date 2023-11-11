@@ -11,16 +11,16 @@ import org.openjdk.jmh.annotations.*
 @Measurement(iterations = 10)
 @Fork(1)
 class Performance:
+  val person = Person.newPerson
+
   @Benchmark
   def fury(): (Array[Byte], Person) =
-    val person = Person.newPerson
     val serializedPerson = Store.serialize(person)
     val deserializedPerson = Store.deserialize(serializedPerson)
     (serializedPerson, deserializedPerson)
 
   @Benchmark
   def jsoniter(): (String, Person) =
-    val person = Person.newPerson
     val serializedPerson = Store.toJson(person)
     val deserializedPerson = Store.fromJson(serializedPerson)
     (serializedPerson, deserializedPerson)
