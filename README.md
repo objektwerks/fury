@@ -18,8 +18,8 @@ Benchmark
 Results
 -------
 >OpenJDK Runtime Environment Zulu21.28+85-CA (build 21+35), **Scala 3.3.1**, Apple M1, 2020, 16GB
-1. jsoniterBenchmark 0.232
-2. furyBenchmark     0.485
+1. jsoniter 0.232
+2. fury     0.485
 >Total time: 402 s (06:42), 10 warmups, 10 iterations, in microseconds, completed **2023.11.11**
 
 >[Current Scala3-Json Tests](https://github.com/objektwerks/scala3.json)
