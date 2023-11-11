@@ -1,6 +1,6 @@
 Fury
 ----
->Fury feature tests and benchmarks using Jsoniter and Scala 3.
+>Fury feature tests and performance benchmark against Jsoniter using Scala 3.
 
 Build
 -----
