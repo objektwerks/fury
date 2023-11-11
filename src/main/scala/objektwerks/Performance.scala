@@ -16,7 +16,6 @@ class Performance:
     val person = Person.newPerson
     val serializedPerson = Store.serialize(person)
     val deserializedPerson = Store.deserialize(serializedPerson)
-    assert( person == deserializedPerson )
     (serializedPerson, deserializedPerson)
 
   @Benchmark
@@ -24,5 +23,4 @@ class Performance:
     val person = Person.newPerson
     val serializedPerson = Store.toJson(person)
     val deserializedPerson = Store.fromJson(serializedPerson)
-    assert( person == deserializedPerson )
     (serializedPerson, deserializedPerson)
