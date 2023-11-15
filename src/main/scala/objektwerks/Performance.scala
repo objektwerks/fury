@@ -14,10 +14,7 @@ class Performance:
   val person = Person.newPerson
 
   @Benchmark
-  def fury(): (Array[Byte], Person) =
-    val serializedPerson = Store.serialize(person)
-    val deserializedPerson = Store.deserialize(serializedPerson)
-    (serializedPerson, deserializedPerson)
+  def fury(): Person = Store.deserialize( Store.serialize(person) )
 
   @Benchmark
   def jsoniter(): (String, Person) =
