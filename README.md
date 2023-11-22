@@ -31,4 +31,4 @@ Resources
 ---------
 * [Fury Scala Guide](https://github.com/alipay/fury/blob/main/docs/guide/scala_guide.md)
 * [Pro Benchmarking Tips](https://github.com/objektwerks/fury/pull/1)
-* [Current Scala3-Json Tests](https://github.com/objektwerks/scala3.json)
+* [Scala3-Json Benchmarks](https://github.com/objektwerks/scala3.json)
