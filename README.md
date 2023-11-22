@@ -27,10 +27,6 @@ Results
 2. fury     - 0.492
 >Total time: 402 s (06:42), 10 warmups, 10 iterations, average time in microseconds, completed **2023.11.15**
 
->[Current Scala3-Json Tests](https://github.com/objektwerks/scala3.json)
-
->[Pro Benchmarking Tips](https://github.com/objektwerks/fury/pull/1)
-
 Resources
 ---------
 * [Fury Scala Guide](https://github.com/alipay/fury/blob/main/docs/guide/scala_guide.md)
