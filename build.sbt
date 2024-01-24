@@ -5,7 +5,7 @@ organization := "objektwerks"
 version := "0.1-SNAPSHOT"
 scalaVersion := "3.4.0-RC2"
 libraryDependencies ++= {
-  val jsoniterVersion = "2.27.3"
+  val jsoniterVersion = "2.27.4"
   Seq(
     "org.furyio" % "fury-core" % "0.4.1",
     "com.github.plokhotnyuk.jsoniter-scala" %% "jsoniter-scala-core" % jsoniterVersion,
