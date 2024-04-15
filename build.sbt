@@ -10,7 +10,7 @@ libraryDependencies ++= {
     "org.furyio" % "fury-core" % "0.4.1",
     "com.github.plokhotnyuk.jsoniter-scala" %% "jsoniter-scala-core" % jsoniterVersion,
     "com.github.plokhotnyuk.jsoniter-scala" %% "jsoniter-scala-macros" % jsoniterVersion % Provided,
-    "ch.qos.logback" % "logback-classic" % "1.5.3" % Test,
+    "ch.qos.logback" % "logback-classic" % "1.5.4" % Test,
     "org.scalatest" %% "scalatest" % "3.2.18" % Test
   )
 }
