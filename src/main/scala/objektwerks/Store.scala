@@ -2,7 +2,7 @@ package objektwerks
 
 import com.github.plokhotnyuk.jsoniter_scala.core.*
 
-import io.fury.Fury
+import org.apache.fury.Fury
 
 object Store:
   val fury = Fury
