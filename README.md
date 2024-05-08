@@ -34,6 +34,7 @@ Results
 
 Resources
 ---------
+* [Apache Fury](https://fury.apache.org/)
 * [Fury Scala Guide](https://github.com/alipay/fury/blob/main/docs/guide/scala_guide.md)
 * [Pro Benchmarking Tips](https://github.com/objektwerks/fury/pull/1)
 * [Scala3-Json Benchmarks](https://github.com/objektwerks/scala3.json)
