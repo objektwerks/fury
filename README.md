@@ -18,8 +18,8 @@ Benchmark
 Results
 -------
 >OpenJDK Runtime Environment Zulu22.28+91-CA (build 22+36), **Scala 4.2.1-RC1**, Apple M1, 2020, 16GB
-1. jsoniter - 0.232
-2. fury     - 0.467
+1. jsoniter - 0.187
+2. fury     - 0.491
 >Total time: 402 s (06:42), 10 warmups, 10 iterations, average time in microseconds, completed **2024.5.8**
 
 >OpenJDK Runtime Environment Zulu21.30+15-CA (build 21.0.1+12-LTS), **Scala 3.3.1**, Apple M1, 2020, 16GB
