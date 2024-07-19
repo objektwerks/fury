@@ -3,7 +3,7 @@ enablePlugins(JmhPlugin)
 name := "fury"
 organization := "objektwerks"
 version := "0.1-SNAPSHOT"
-scalaVersion := "3.5.0-RC4"
+scalaVersion := "3.5.0-RC5"
 libraryDependencies ++= {
   val jsoniterVersion = "2.30.7"
   Seq(
