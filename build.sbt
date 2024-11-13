@@ -7,7 +7,7 @@ scalaVersion := "3.6.1"
 libraryDependencies ++= {
   val jsoniterVersion = "2.31.3"
   Seq(
-    "org.apache.fury" % "fury-core" % "0.8.0",
+    "org.apache.fury" % "fury-core" % "0.9.0",
     "com.github.plokhotnyuk.jsoniter-scala" %% "jsoniter-scala-core" % jsoniterVersion,
     "com.github.plokhotnyuk.jsoniter-scala" %% "jsoniter-scala-macros" % jsoniterVersion % Provided,
     "ch.qos.logback" % "logback-classic" % "1.5.12" % Test,
