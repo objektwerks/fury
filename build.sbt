@@ -16,5 +16,5 @@ libraryDependencies ++= {
 }
 parallelExecution := false
 scalacOptions ++= Seq(
-  "-Wall"
+  "-Wunused:all"
 )
